@@ -1,5 +1,30 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div id="app">
+  <header>
+    <h1 class="text-center title">Character and Word Counter </h1>
+  </header>
 
-{{outlet}}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 text-center">
+        <div class="new-post">
+          {{textarea value=recipe cols="50" rows="10" placeholder=example}}
+          <button class="btn btn-default" {{action 'convertRecipe' recipe}}>Calculate</button>
+        </div>
+      </div>
+      <div class="flexbox-container">
+        <div class="counter-container">
+          <h2>Word count: {{wordCount}}</h2>
+          <h2>Character count: {{charCount}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<footer class="fixed-bottom">
+<div class="text-center">
+  <a href="https://github.com/tchan/ember-recipe">View Source </a>
+</div>
+</footer>
+
+</div>
