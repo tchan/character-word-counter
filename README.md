@@ -1,50 +1,12 @@
 # character-word-counter
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a simple app that lets you know how many characters/words are in your phrase! Remember that the ideal numbers are 8-14 word headlines AND 80 characters or fewer, otherwise some bits may be cut off. 
 
-## Prerequisites
+> How long should your headline be? HubSpot [analyzed](http://blog.hubspot.com/marketing/seo-social-media-study#sm.00000z83pnwr7kdwxvrrsinzxyr7l) 6,000 blog posts and found that stories with **8 to 14-word headlines** get more social  media shares.
+This said, make sure your headline is **80 characters** or fewer. Otherwise, the title will get truncated in news feeds when people share your article on Facebook and Twitter.
 
-You will need the following things properly installed on your computer.
+-via [Quincy Larson](https://medium.freecodecamp.org/how-to-write-medium-stories-people-will-actually-read-92e58a27c8d8) 
+![SS](http://i.imgur.com/wy8FPmM.png)
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+SEO study can be found [here](https://blog.hubspot.com/marketing/seo-social-media-study#sm.00000z83pnwr7kdwxvrrsinzxyr7l)
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd character-word-counter`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
