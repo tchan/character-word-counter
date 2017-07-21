@@ -7,14 +7,14 @@
     <div class="row">
       <div class="col-sm-6 text-center">
         <div class="new-post">
-          {{textarea value=recipe cols="50" rows="10" placeholder=example}}
-          <button class="btn btn-default" {{action 'convertRecipe' recipe}}>Calculate</button>
+          {{textarea value=text cols="50" rows="10" placeholder=example}}
         </div>
       </div>
       <div class="flexbox-container">
         <div class="counter-container">
-          <h2>Word count: {{wordCount}}</h2>
-          <h2>Character count: {{charCount}}</h2>
+          <h2 class="{{if wordDanger 'bg-danger' 'bg-success'}}">Word count: {{wordCount}}</h2>
+          <h2 class="{{if charDanger 'bg-danger' 'bg-success'}}">Character count: {{text.length}}</h2>
+          <h2 class="{{if charAndWordDanger 'bg-danger' 'bg-success'}}">{{resultMessage}}</h2>
         </div>
       </div>
     </div>
