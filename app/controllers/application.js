@@ -26,9 +26,6 @@ export default Ember.Controller.extend({
   charAndWordDanger: computed('charDanger', 'wordDanger', function() {
     var charDanger = get(this, 'charDanger');
     var wordDanger = get(this, 'wordDanger');
-    console.log('char', charDanger);
-    console.log('word', wordDanger);
-    console.log('both dang?: ', (charDanger && wordDanger));
     return (charDanger || wordDanger);
   }),
 
@@ -52,6 +49,9 @@ export default Ember.Controller.extend({
     }
     else if (wordCount >=8 && wordCount <=14 && text.length <=80) {
       return "Your title is ideal for sharing!"
+    }
+    else if (wordCount >=8 && wordCount <=14 && text.length >80) {
+      return "Your title has too many characters!"
     }
     else if (wordCount <8){
       return "Your title is too short!";

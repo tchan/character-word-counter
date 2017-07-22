@@ -12,9 +12,15 @@
       </div>
       <div class="flexbox-container">
         <div class="counter-container">
+          {{#if (not wordCount)}}
+          <h2>Word count: {{wordCount}}</h2>
+          <h2>Character count: {{text.length}}</h2>
+          <h2>{{resultMessage}}</h2>
+          {{else if (and (not-eq wordCount 0) (not-eq text.length 0))}}
           <h2 class="{{if wordDanger 'bg-danger' 'bg-success'}}">Word count: {{wordCount}}</h2>
           <h2 class="{{if charDanger 'bg-danger' 'bg-success'}}">Character count: {{text.length}}</h2>
           <h2 class="{{if charAndWordDanger 'bg-danger' 'bg-success'}}">{{resultMessage}}</h2>
+          {{/if}}
         </div>
       </div>
     </div>
@@ -23,7 +29,7 @@
 
 <footer class="fixed-bottom">
 <div class="text-center">
-  <a href="https://github.com/tchan/ember-recipe">View Source </a>
+  <a href="https://github.com/tchan/character-word-counter">View Readme & Source </a>
 </div>
 </footer>
 
