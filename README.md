@@ -1,4 +1,4 @@
-# character-word-counter
+# Character and Word Counter for Titles
 
 This is a simple app that lets you know how many characters/words are in your phrase! Remember that the ideal numbers are 8-14 word headlines AND 80 characters or fewer, otherwise some bits may be cut off. 
 
